@@ -2,18 +2,33 @@ import { getCharacters } from "../assets/service/serviceAPI.js";
 
 export const character = `<h1 class='title'>CHARACTERS</H1>`;
 
+const modalWindow = document.getElementById("modal");
+const btnClose = document.querySelector(".close__modal");
+
 export function characters() {
   let content = document.getElementById("root");
   getCharacters().then((characters) => {
     const markup = characters
       .map((character) => {
         return `        
-        <h2 class="character">${character.name}</h2>        
+        <h2 class="elemActive">${character.name}</h2>        
      `;
       })
       .join("");
     //console.log(markup);
     content.insertAdjacentHTML("beforeend", markup);
+
+    const elementActive = document.querySelectorAll(".elemActive");
+
+    elementActive.forEach((elem) => {
+      elem.addEventListener("click", () => {
+        modalWindow.showModal();
+      });
+    });
+
+    btnClose.addEventListener("click", () => {
+      modalWindow.close();
+    });
   });
 }
 

@@ -22,22 +22,28 @@ const router = () => {
       return (content.innerHTML = "");
 
     case "#/characters":
-      return (content.innerHTML = character + characters());
+      characters();
+      return (content.innerHTML = character);
 
     case "#/films":
-      return (content.innerHTML = film + films());
+      films();
+      return (content.innerHTML = film);
 
     case "#/starships":
-      return (content.innerHTML = starship + starships());
+      starships();
+      return (content.innerHTML = starship);
 
     case "#/vehicles":
-      return (content.innerHTML = vehicle + vehicles());
+      vehicles();
+      return (content.innerHTML = vehicle);
 
     case "#/species":
-      return (content.innerHTML = specie + species());
+      species();
+      return (content.innerHTML = specie);
 
     case "#/planets":
-      return (content.innerHTML = planet + planets());
+      planets();
+      return (content.innerHTML = planet);
 
     default:
       return (content.innerHTML = `<img class='img__error' src='../assets/images/img-404.png' alt='404'>`);

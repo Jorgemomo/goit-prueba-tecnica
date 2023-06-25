@@ -2,18 +2,33 @@ import { getSpecies } from "../assets/service/serviceAPI.js";
 
 export const specie = `<h1 class='title'>SPECIES</H1>`;
 
+const modalWindow = document.getElementById("modal");
+const btnClose = document.querySelector(".close__modal");
+
 export function species() {
   let content = document.getElementById("root");
   getSpecies().then((species) => {
     const markup = species
       .map((specie) => {
         return `        
-        <h2 class="specie">${specie.name}</h2>        
+        <h2 class="elemActive">${specie.name}</h2>        
      `;
       })
       .join("");
     //console.log(markup);
     content.insertAdjacentHTML("beforeend", markup);
+
+    const elementActive = document.querySelectorAll(".elemActive");
+
+    elementActive.forEach((elem) => {
+      elem.addEventListener("click", () => {
+        modalWindow.showModal();
+      });
+    });
+
+    btnClose.addEventListener("click", () => {
+      modalWindow.close();
+    });
   });
 }
 

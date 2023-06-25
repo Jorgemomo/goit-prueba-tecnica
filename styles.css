@@ -63,24 +63,14 @@ hr {
   text-align: center;
 }
 
-.character,
-.film,
-.starship,
-.vehicle,
-.specie,
-.planet {
+.elemActive {
   border: 1px solid rgba(243, 243, 6, 0.877);
   padding: 3px 2px;
   text-align: center;
   cursor: pointer;
 }
 
-.character:hover,
-.film:hover,
-.starship:hover,
-.vehicle:hover,
-.specie.hover,
-.planet:hover {
+.elemActive:hover {
   color: aliceblue;
 }
 
@@ -100,4 +90,28 @@ hr {
 .footer-sw p {
   margin: 5px;
   font-size: 14px;
+}
+
+#modal {
+  width: 80%;
+}
+
+.modal__container {
+  width: 90%;
+  margin: auto;
+  max-width: 600px;
+  max-height: 90%;
+  padding: 3em 2.5em;
+  background-color: aliceblue;
+}
+
+.close__modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.loader {
+  display: none;
 }
