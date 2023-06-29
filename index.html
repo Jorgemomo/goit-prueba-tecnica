@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SPA with vanilla js, usando la APi de Star Wars"
+    />
     <title>SPA STARS WARS</title>
     <link rel="stylesheet" href="./styles.css" />
     <link
@@ -46,17 +50,13 @@
     <hr />
 
     <main>
-      <section id="root"></section>
+      <section id="root">
+        <div id="loading"></div>
+      </section>
       <dialog id="modal">
-        <div class="modal__container">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
-            sint incidunt eaque dolore. Illo, fugit aliquam. Aliquid aut unde
-            est recusandae illum eos excepturi sunt. Commodi aliquid tenetur
-            quae cumque.
-          </p>
-          <button class="close__modal">x</button>
-        </div>
+        <div class="modal__container"></div>
+        <div id="load">Loading...</div>
+        <button class="close__modal">x</button>
       </dialog>
     </main>
 
@@ -64,6 +64,6 @@
       <p>&copy; 2023 - Star Wars API by: Jorge Morales</p>
     </footer>
 
-    <script src="./index.js" type="module"></script>
+    <script defer src="./index.js" type="module"></script>
   </body>
 </html>

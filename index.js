@@ -5,12 +5,6 @@ import { vehicles, vehicle } from "./components/vehicles.js";
 import { species, specie } from "./components/species.js";
 import { planets, planet } from "./components/planets.js";
 
-// getPlanets().then((planets) => {
-//   planets.map((planet) => {
-//     console.log(planet.name);
-//   });
-// });
-
 const router = () => {
   const hash = window.location.hash;
 
