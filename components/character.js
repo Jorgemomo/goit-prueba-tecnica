@@ -69,26 +69,3 @@ export function characters() {
   });
 }
 
-// async function getCharacters() {
-//   const url = "https://swapi.dev/api/people/";
-//   return await fetch(url)
-//     .then((response) => response.json())
-//     .then((data) => {
-//       //console.log(data.results);
-//       return data.results;
-//     })
-//     .catch((error) => console.error(error));
-// }
-// function displayCharacters(characters) {
-//   const content = document.getElementById("root");
-//   characters.forEach((character) => {
-//     const characterName = document.createElement("h2");
-//     characterName.classList.add("character");
-//     characterName.innerText = character.name;
-//     content.appendChild(characterName);
-//   });
-// }
-// export async function Characters() {
-//   const characters = await getCharacters();
-//   displayCharacters(characters);
-// }

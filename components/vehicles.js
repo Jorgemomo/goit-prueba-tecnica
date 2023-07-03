@@ -64,26 +64,3 @@ export function vehicles() {
     });
   });
 }
-
-// async function getVehicles() {
-//   const url = "https://swapi.dev/api/vehicles/";
-//   return await fetch(url)
-//     .then((response) => response.json())
-//     .then((data) => {
-//       return data.results;
-//     })
-//     .catch((error) => console.error(error));
-// }
-// function displayVehicles(vehicles) {
-//   const content = document.getElementById("root");
-//   vehicles.forEach((vehicle) => {
-//     const vehicleName = document.createElement("h2");
-//     vehicleName.classList.add("vehicle");
-//     vehicleName.innerText = vehicle.name;
-//     content.appendChild(vehicleName);
-//   });
-// }
-// export async function Vehicles() {
-//   const vehicles = await getVehicles();
-//   displayVehicles(vehicles);
-// }

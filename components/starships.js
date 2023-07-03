@@ -65,25 +65,3 @@ export function starships() {
   });
 }
 
-//async function getStarships() {
-//   const url = "https://swapi.dev/api/starships/";
-//   return await fetch(url)
-//     .then((response) => response.json())
-//     .then((data) => {
-//       return data.results;
-//     })
-//     .catch((error) => console.error(error));
-// }
-// function displayStarships(starships) {
-//   const content = document.getElementById("root");
-//   starships.forEach((starship) => {
-//     const starshipName = document.createElement("h2");
-//     starshipName.classList.add("starship");
-//     starshipName.innerText = starship.name;
-//     content.appendChild(starshipName);
-//   });
-// }
-// export async function Starships() {
-//   const starships = await getStarships();
-//   displayStarships(starships);
-// }

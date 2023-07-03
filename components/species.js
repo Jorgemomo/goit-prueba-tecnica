@@ -61,25 +61,3 @@ export function species() {
   });
 }
 
-// async function getSpecies() {
-//   const url = "https://swapi.dev/api/species/";
-//   return await fetch(url)
-//     .then((response) => response.json())
-//     .then((data) => {
-//       return data.results;
-//     })
-//     .catch((error) => console.error(error));
-// }
-// function displaySpecies(species) {
-//   const content = document.getElementById("root");
-//   species.forEach((specie) => {
-//     const specieName = document.createElement("h2");
-//     specieName.classList.add("specie");
-//     specieName.innerText = specie.name;
-//     content.appendChild(specieName);
-//   });
-// }
-// export async function Species() {
-//   const species = await getSpecies();
-//   displaySpecies(species);
-// }
