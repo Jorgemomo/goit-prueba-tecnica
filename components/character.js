@@ -7,6 +7,7 @@ export const character = `<h1 class='title'>CHARACTERS</H1>`;
 
 const modalWindow = document.getElementById("modal");
 const btnClose = document.querySelector(".close__modal");
+S;
 const modalContent = document.querySelector(".modal__container");
 const loader = document.getElementById("load");
 
@@ -31,7 +32,7 @@ export function characters() {
 
         const getCharacterId = elem.getAttribute("id");
         let characterId = getCharacterId.slice(-3);
-        console.log(characterId);
+        //console.log(characterId);
 
         getCharacterDetails(characterId)
           .then((character) => {
@@ -43,12 +44,12 @@ export function characters() {
                  <li>Mass: ${character.mass}</li>
                  <li>Hair color: ${character.hair_color}</li>
                  <li>Skin color: ${character.skin_color}</li>
-                 <li>Eye color: ${character.eye_color}</li>
+                 <li>Eye color: ${character.eye_color}</li>tt
                  <li>Birth year: ${character.birth_year}</li>
                  <li>Gender: ${character.gender}</li>
-                 <li>Homeland: ${character.homeland}</li>
+                 <li>Homeland: ${character.homeworld}</li>
                  <li>Films: ${character.films}</li>
-                 <li>Specie: ${character.species}</li>     
+                 <li>Specie: ${character.species[0]}</li>     
                  <li>Vehicles: ${character.vehicles}</li>
                  <li>Starships: ${character.starships}</li>                  
               </ul>          
