@@ -7,7 +7,6 @@ export const character = `<h1 class='title'>CHARACTERS</H1>`;
 
 const modalWindow = document.getElementById("modal");
 const btnClose = document.querySelector(".close__modal");
-S;
 const modalContent = document.querySelector(".modal__container");
 const loader = document.getElementById("load");
 
